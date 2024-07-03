@@ -1,0 +1,210 @@
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background: #2e2e2e;
+  }
+  .form-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px 30px;
+    color: #111;
+  }
+  .form-input {
+    margin: 10px 0px;
+  }
+  .form-input label {
+    display: block;
+    font-size: 15px;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  .form-input input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #888;
+    font-size: 15px;
+  }
+  button {
+    margin-top: 5px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #4c81ff;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .new-user, .existing-user {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .new-user a, .existing-user a {
+    color: #4c81ff;
+    text-decoration: none;
+  }
+  .new-user a:hover, .existing-user a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login form specific */
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid rgba(17, 12, 46, 0.15);
+    border-radius: 10px;
+  }
+  
+  /* Captcha styles */
+  .captcha {
+    margin: 15px 0px;
+  }
+  .captcha .preview {
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    border-radius: 4px;
+    font-family: "monospace";
+  }
+  .captcha .preview span {
+    display: inline-block;
+    user-select: none;
+  }
+  .captcha .captcha-form {
+    display: flex;
+  }
+  .captcha .captcha-form input {
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #888;
+  }
+  .captcha .captcha-form .captcha-refresh {
+    width: 40px;
+    border: none;
+    outline: none;
+    background: #888;
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+  }
+  
+  /* Registration form specific */
+  .registration-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid rgba(17, 12, 46, 0.15);
+    border-radius: 10px;
+  }
+
+  .outer {
+    background-color: #121212;
+    color: #E8EAED;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-message {
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+.dashboard-button {
+    background-color: #1E1E1E;
+    color: #E8EAED;
+    border: 2px solid #8AB4F8;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Removes default underline */
+    position: relative; /* Ensures proper positioning of the icon and text */
+}
+
+.dashboard-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.dashboard-button:focus {
+    outline: none;
+    border-color: #8AB4F8;
+}
+
+.dashboard-icon {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.dashboard-text {
+    font-size: 1.1em; /* Adjust text size */
+    margin-bottom: 5px; /* Space between text and button border */
+}
+.logout {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.logout button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

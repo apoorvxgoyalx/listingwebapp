@@ -1,0 +1,154 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire page */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Logout button */
+.logout {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.logout button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Greeting message */
+.greeting {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+}
+
+.greeting p {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+/* Heading style */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Sidebar style */
+.sidebar {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Form inside sidebar */
+.sidebar form {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sidebar select, .sidebar input[type="number"], .sidebar input[type="text"], .sidebar button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.sidebar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+/* Rental listings style */
+.rental-listings {
+    float: left;
+    width: 70%;
+}
+
+/* Individual rental property listing style */
+.rental {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Prevent images from stretching */
+}
+
+.rental img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rental h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 22px;
+}
+
+.rental p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.rental button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+.rental button:hover {
+    background-color: #0056b3;
+}
+.back-to-dashboard {
+    margin-bottom: 20px;
+}
+
