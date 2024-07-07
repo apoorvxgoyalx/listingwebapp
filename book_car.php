@@ -38,7 +38,7 @@ if (isset($_POST['book_now'])) {
     $car_id = $conn->real_escape_string($car_id);
 
     // Insert into bookings table
-    $sql = "INSERT INTO bookings (user_id, car_id) VALUES ('$user_id', '$car_id')";
+    $sql = "INSERT INTO car_bookings (user_id, car_id) VALUES ('$user_id', '$car_id')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Booking successful!";
