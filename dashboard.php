@@ -24,6 +24,11 @@ $username = $_SESSION['username'];
                 <button type="submit" name="logout">Logout</button>
             </form>
         </div>
+        <a href="profile.php" class="dashboard-button">
+    <div class="dashboard-text">Profile</div>
+</a>
+<br>
+
         <div class="dashboard">
             <a href="cars.php" class="dashboard-button">
                 <div class="dashboard-text">Cars</div>
