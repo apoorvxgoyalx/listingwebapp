@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Login Form with Captcha</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+<body>
 <div class="login-form">
   <div class="form-title">
     Login
   </div>
   <form action="login.php" method="POST">
-  <div class="form-input">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username">
-  </div>
-  <div class="form-input">
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password">
-  </div>
-  
-  <div class="form-input">
-    <button id="login-btn">Login</button>
-  </div>
-</form>
+    <div class="form-input">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="form-input">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+    </div>
+    
+    <!-- Add reCAPTCHA widget -->
+    <div class="g-recaptcha" data-sitekey="6LfcVw8qAAAAABU3pVK-sZn19fCs_SuFy5cB0sYM"></div>
+    
+    <div class="form-input">
+      <button id="login-btn" type="submit">Login</button>
+    </div>
+  </form>
   <div class="new-user">
     <a href="registration.html">New user? Register here</a>
+  </div>
 </div>
-</div>
-    <script src="script.js"></script>
-  </body>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="script.js"></script>
+</body>
 </html>

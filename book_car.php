@@ -42,6 +42,7 @@ if (isset($_POST['book_now'])) {
 
     if ($conn->query($sql) === TRUE) {
         echo "Booking successful!";
+        echo "<br><a href='payment_form.php'>PAYMENT GATEWAY</a>";
         echo "<br><a href='cars.php'>Back to Cars</a>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
