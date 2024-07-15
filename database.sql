@@ -155,3 +155,14 @@ VALUES
     ('Riverside Cottage', 'Rishikesh', 'Peaceful cottage by the river, great for yoga retr...', 250.00, 'https://www.holidify.com/images/cmsuploads/compres...', '2024-07-25', 3, 2),
     ('Luxury Resort', 'Jaipur', 'Opulent resort in the Pink City, offering royal ac...', 500.00, 'https://media-cdn.tripadvisor.com/media/photo-s/1a...', '2024-08-10', 5, 4),
     ('Country House', 'Pune', 'Quaint country house surrounded by lush greenery, ...', 180.00, 'https://content.jdmagicbox.com/comp/pune/c8/020pxx...', '2024-07-30', 2, 1);
+
+
+CREATE TABLE IF NOT EXISTS payments (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    cardholder_name VARCHAR(100) NOT NULL,
+    card_number VARCHAR(16) NOT NULL,
+    expiry_date VARCHAR(5) NOT NULL,
+    cvv VARCHAR(3) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
